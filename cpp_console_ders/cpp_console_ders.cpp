@@ -2,6 +2,7 @@
 Koray Bilir - 222203533 - Teknik Bilimler MYO - Bilgisayar Programciligi
 */
 #include <iostream>
+#include <string>
 
 #define PI 3.14159
 #define nl '\n'
@@ -191,7 +192,7 @@ int main()
 	{
 		std::cout << "Zar zor gectiniz!";
 	}
-	*/
+	
 	//---------------------------------------------------------------------------------------
 
 baslangic:
@@ -225,6 +226,32 @@ baslangic:
 	}
 	std::cout << "Sonuc :" << sonuc;
 	std::cout << "\nProgramimiza tekrar bekleriz";
+	*/
+	//--------------------------------------------------------------------------------------
+
+	int derece;
+	std::string goruntule;
+	std::cout << "Lutfen 0 ve 100 arasinda derece giriniz: ";
+	std::cin >> derece;
+
+	if (derece < 0 || derece > 100)
+	{
+		goruntule = "Gecersiz not.";
+	}
+	else if (derece <= 50)
+	{
+		goruntule = "Dusuk.";
+	}
+	else if (derece <= 70)
+	{
+		goruntule = "Orta.";
+	}
+	else if (derece <= 100)
+	{
+		goruntule = "Iyi.";
+	}
+	std::cout << goruntule << nl;
+	return 0;
 
 	//--------------------------------------------------------------------------------------
 }
