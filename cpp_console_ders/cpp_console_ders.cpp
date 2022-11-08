@@ -267,7 +267,7 @@ baslangic:
 	{
 		cout << "cift";
 	}
-	*/
+	
 	//--------------------------------------------------------------------------------------
 
 	double birincisayi, buyuksayi, ikincisayi, ucuncusayi;
@@ -287,5 +287,42 @@ baslangic:
 		buyuksayi = ucuncusayi;
 	}
 	cout << "Girilen en buyuk sayi = " << buyuksayi;
+	*/
+	//---------------------------------------------------------------------------------------
+
+	baslangic:
+		double sayi;
+		cout << "Ogrencinin notunu giriniz =\n";
+		cin >> sayi;
+		if (sayi >= 0 && sayi < 40)
+		{
+			cout << "FF Kaldi\n";
+		}
+		else if (sayi >= 40 && sayi < 60)
+		{
+			cout << "EE\n";
+		}
+		else if (sayi >= 60 && sayi < 70)
+		{
+			cout << "DD\n";
+		}
+		else if (sayi >= 70 && sayi < 80)
+		{
+			cout << "CC\n";
+		}
+		else if (sayi >= 80 && sayi < 90)
+		{
+			cout << "BB\n";
+		}
+		else if (sayi >= 90 && sayi <= 100)
+		{
+			cout << "AA\n";
+		}
+		else
+		{
+			cout << "Lutfen 0 ile 100 arasi deger giriniz.\n";
+			goto baslangic;
+		}
+		cout << "/*/*/*/*| Tekrar Bekleriz |/*/*/*/*/*/*";
 }
 
