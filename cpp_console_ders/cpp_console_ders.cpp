@@ -6,43 +6,44 @@ Koray Bilir - 222203533 - Teknik Bilimler MYO - Bilgisayar Programciligi
 
 #define PI 3.14159
 #define nl '\n'
+using namespace std;
 
 int main()
 {
 	/*
-	std::cout << "\n\n Veri Tipleri :\n";
-	std::cout << "-----------------------------------------------------\n";
-	std::cout << " Uzunlugu( Char) dir :			" << sizeof(char) << " bytes\n";
-	std::cout << " Uzunlugu( Short) dir :			" << sizeof(short) << " bytes\n";
-	std::cout << " Uzunlugu( Int) dir :			" << sizeof(int) << " bytes\n";
-	std::cout << " Uzunlugu( Long) dir :			" << sizeof(long) << " bytes\n";
-	std::cout << " Uzunlugu( Long Long) dir :		" << sizeof(long long) << " bytes\n";
-	std::cout << " Uzunlugu( Float) dir :			" << sizeof(float) << " bytes\n";
-	std::cout << " Uzunlugu( Double) dir :		" << sizeof(double) << " bytes\n";
-	std::cout << " Uzunlugu( Long_Double) dir :		" << sizeof(long double) << " bytes\n";
-	std::cout << " Uzunlugu( Bool) dir :			" << sizeof(bool) << " bytes\n";
-	std::cout << "\n\n";
+	cout << "\n\n Veri Tipleri :\n";
+	cout << "-----------------------------------------------------\n";
+	cout << " Uzunlugu( Char) dir :			" << sizeof(char) << " bytes\n";
+	cout << " Uzunlugu( Short) dir :			" << sizeof(short) << " bytes\n";
+	cout << " Uzunlugu( Int) dir :			" << sizeof(int) << " bytes\n";
+	cout << " Uzunlugu( Long) dir :			" << sizeof(long) << " bytes\n";
+	cout << " Uzunlugu( Long Long) dir :		" << sizeof(long long) << " bytes\n";
+	cout << " Uzunlugu( Float) dir :			" << sizeof(float) << " bytes\n";
+	cout << " Uzunlugu( Double) dir :		" << sizeof(double) << " bytes\n";
+	cout << " Uzunlugu( Long_Double) dir :		" << sizeof(long double) << " bytes\n";
+	cout << " Uzunlugu( Bool) dir :			" << sizeof(bool) << " bytes\n";
+	cout << "\n\n";
 
 	//-------------------------------------------------------------------------------------------------
 
-	std::cout << "\n\n Veri Tiplerinin Alt Ve Ust Sinirleri :\n";
-	std::cout << "---------------------------------------------------------------------\n";
-	std::cout << " Maximum( Int) :			" << INT_MAX << "\n";
-	std::cout << " Minimum( Int) :			" << INT_MIN << "\n";
-	std::cout << " Maximum( Unsigned Int) :		" << UINT_MAX << "\n";
-	std::cout << " Maximum( Long Long) :			" << LLONG_MAX << "\n";
-	std::cout << " Maximum( Long Long) :			" << LLONG_MIN << "\n";
-	std::cout << " Maximum( Unsigned Long Long) :		" << ULLONG_MAX << "\n";
-	std::cout << " Bits( Char) :				" << CHAR_BIT << "\n";
-	std::cout << " Maximum( Char) :			" << CHAR_MAX << "\n";
-	std::cout << " Minimum( Char) :			" << CHAR_MIN << "\n";
-	std::cout << " Maximum( Signed Char) :		" << SCHAR_MAX << "\n";
-	std::cout << " Minimum( Signed Char) :		" << SCHAR_MIN << "\n";
-	std::cout << " Maximum( Unsigned Char) :		" << UCHAR_MAX << "\n";
-	std::cout << " Maximum( Short) :			" << SHRT_MAX << "\n";
-	std::cout << " Minimum( Short) :			" << SHRT_MIN << "\n";
-	std::cout << " Maximum( Unsigned Short) :		" << USHRT_MAX << "\n";
-	std::cout << "\n\n";
+	cout << "\n\n Veri Tiplerinin Alt Ve Ust Sinirleri :\n";
+	cout << "---------------------------------------------------------------------\n";
+	cout << " Maximum( Int) :			" << INT_MAX << "\n";
+	cout << " Minimum( Int) :			" << INT_MIN << "\n";
+	cout << " Maximum( Unsigned Int) :		" << UINT_MAX << "\n";
+	cout << " Maximum( Long Long) :			" << LLONG_MAX << "\n";
+	cout << " Maximum( Long Long) :			" << LLONG_MIN << "\n";
+	cout << " Maximum( Unsigned Long Long) :		" << ULLONG_MAX << "\n";
+	cout << " Bits( Char) :				" << CHAR_BIT << "\n";
+	cout << " Maximum( Char) :			" << CHAR_MAX << "\n";
+	cout << " Minimum( Char) :			" << CHAR_MIN << "\n";
+	cout << " Maximum( Signed Char) :		" << SCHAR_MAX << "\n";
+	cout << " Minimum( Signed Char) :		" << SCHAR_MIN << "\n";
+	cout << " Maximum( Unsigned Char) :		" << UCHAR_MAX << "\n";
+	cout << " Maximum( Short) :			" << SHRT_MAX << "\n";
+	cout << " Minimum( Short) :			" << SHRT_MIN << "\n";
+	cout << " Maximum( Unsigned Short) :		" << USHRT_MAX << "\n";
+	cout << "\n\n";
 
 	//-------------------------------------------------------------------------------------------------
 
@@ -56,17 +57,17 @@ int main()
 	long toplamkesinti = 12047235L;
 	long long deger = 995324987LL;
 
-	std::cout << "\n\n Degerler :\n";
-	std::cout << "---------------------------------------------------------------------\n";
-	std::cout << " Cinsiyeti :		" << cinsiyet << std::endl;
-	std::cout << " Evlimi :		" << evlimi << std::endl;
-	std::cout << " Cocuk sayisi :		" << cocuksayisi << std::endl;
-	std::cout << " Ise giris yili :	" << girisyili << std::endl;
-	std::cout << " Yillik ucreti :	" << yillikucret << std::endl;
-	std::cout << " Yukseklik :		" << yukseklik << std::endl;
-	std::cout << " Oran :			" << oran << std::endl;
-	std::cout << " Kesintiler :		" << toplamkesinti << std::endl;
-	std::cout << " Deger :		" << deger << std::endl;
+	cout << "\n\n Degerler :\n";
+	cout << "---------------------------------------------------------------------\n";
+	cout << " Cinsiyeti :		" << cinsiyet << endl;
+	cout << " Evlimi :		" << evlimi << endl;
+	cout << " Cocuk sayisi :		" << cocuksayisi << endl;
+	cout << " Ise giris yili :	" << girisyili << endl;
+	cout << " Yillik ucreti :	" << yillikucret << endl;
+	cout << " Yukseklik :		" << yukseklik << endl;
+	cout << " Oran :			" << oran << endl;
+	cout << " Kesintiler :		" << toplamkesinti << endl;
+	cout << " Deger :		" << deger << endl;
 
 	//------------------------------------------------------------------------------------
 
@@ -74,7 +75,7 @@ int main()
 	int h = 9;
 	int x = 6;
 	x = (u > h) ? h : u; //if int u is lesser than int h,than u is passed; if int h is higher than int u, than h is passed.
-	std::cout << x;
+	cout << x;
 	return 0;
 
 	//-------------------------------------------------------------------------------------
@@ -82,8 +83,8 @@ int main()
 	double r = 5.0;
 	double circle;
 	circle = 2 * PI * r;
-	std::cout << circle;
-	std::cout << nl;
+	cout << circle;
+	cout << nl;
 	return 0;
 	
 	//-------------------------------------------------------------------------------------
@@ -93,10 +94,10 @@ int main()
 	b = 4;
 	a = b;
 	b = 7;
-	std::cout << "a : ";
-	std::cout << a << nl;
-	std::cout << "b : ";
-	std::cout << b << nl;
+	cout << "a : ";
+	cout << a << nl;
+	cout << "b : ";
+	cout << b << nl;
 	return 0;
 
 	//--------------------------------------------------------------------------------------
@@ -104,7 +105,7 @@ int main()
 	int a, b = 3;
 	a = b;
 	a += 2;
-	std::cout << a;
+	cout << a;
 	return 0;
 	
 	//--------------------------------------------------------------------------------------
@@ -113,96 +114,96 @@ int main()
 	a = 2;
 	b = 7;
 	c = (a > b) ? a : b;
-	std::cout << c;
+	cout << c;
 	return 0;
 	
 	//--------------------------------------------------------------------------------------
 	
 	double yaricap, alan;
-	std::cout << "Lutfen dairenin yaricapini giriniz: ";
-	std::cin >> yaricap;
+	cout << "Lutfen dairenin yaricapini giriniz: ";
+	cin >> yaricap;
 	alan = (yaricap * yaricap) * PI;
-	std::cout << yaricap << " li dairenin alani = " << alan << nl;
+	cout << yaricap << " li dairenin alani = " << alan << nl;
 	return 0;
 	
 	//--------------------------------------------------------------------------------------
 	
 	int x = 5;
 	int y = 10;
-	std::cout << "x = " << x << nl;
-	std::cout << "y = " << y << nl;
-	std::cout << "++x  * --y = " << (++x * --y) << nl;
+	cout << "x = " << x << nl;
+	cout << "y = " << y << nl;
+	cout << "++x  * --y = " << (++x * --y) << nl;
 	return 0;
 	
 	//--------------------------------------------------------------------------------------
 
 	int sayi1, sayi2, sayi3;
 	int toplam;
-	std::cout << "Uc tane sayi giriniz: ";
-	std::cin >> sayi1 >> sayi2 >> sayi3;
+	cout << "Uc tane sayi giriniz: ";
+	cin >> sayi1 >> sayi2 >> sayi3;
 	toplam = sayi1 + sayi2 + sayi3;
-	std::cout << "Toplam: " << toplam << nl;
+	cout << "Toplam: " << toplam << nl;
 	return 0;
 	
 	//--------------------------------------------------------------------------------------
 	
 	int sayi;
-	std::cout << "Bir sayi giriniz: ";
-	std::cin >> sayi;
-	std::cout << (sayi % 2 == 1 ? "Tek" : "Cift");
+	cout << "Bir sayi giriniz: ";
+	cin >> sayi;
+	cout << (sayi % 2 == 1 ? "Tek" : "Cift");
 	return 0;
 	
 	//--------------------------------------------------------------------------------------
 	
 	int dersnot;
-	std::cout << "Not'u giriniz: ";
-	std::cin >> dersnot;
+	cout << "Not'u giriniz: ";
+	cin >> dersnot;
 	if (dersnot >= 50) 
 	{
-		std::cout << "Gectiniz!";
+		cout << "Gectiniz!";
 	}
 	else
 	{
-		std::cout << "Butten alinan not: ";
-		std::cin >> dersnot;
+		cout << "Butten alinan not: ";
+		cin >> dersnot;
 		if (dersnot >= 50)
 		{
-			std::cout << "Gectiniz!";
+			cout << "Gectiniz!";
 		}
 		else
 		{
-			std::cout << "Kaldiniz!";
+			cout << "Kaldiniz!";
 		}
 	}
 	
 	//---------------------------------------------------------------------------------------
 
 	int dersnot;
-	std::cout << "Not'u giriniz: ";
-	std::cin >> dersnot;
+	cout << "Not'u giriniz: ";
+	cin >> dersnot;
 	if (dersnot > 50)
 	{
-		std::cout << "Gectiniz!";
+		cout << "Gectiniz!";
 	}
 	if (dersnot < 50)
 	{
-		std::cout << "Kaldiniz!";
+		cout << "Kaldiniz!";
 	}
 	if (dersnot == 50)
 	{
-		std::cout << "Zar zor gectiniz!";
+		cout << "Zar zor gectiniz!";
 	}
 	
 	//---------------------------------------------------------------------------------------
 
 baslangic:
 	double s1, s2, secim, sonuc;
-	std::cout << "1. sayiyi giriniz :\n";
-	std::cin >> s1;
-	std::cout << "2. sayiyi giriniz :\n";
-	std::cin >> s2;
-	std::cout << "Seciminizi giriniz :\n 1- TOPLA\n 2- CIKAR\n 3-CARP\n 4-BOL ";
-	std::cin >> secim;
+	cout << "1. sayiyi giriniz :\n";
+	cin >> s1;
+	cout << "2. sayiyi giriniz :\n";
+	cin >> s2;
+	cout << "Seciminizi giriniz :\n 1- TOPLA\n 2- CIKAR\n 3-CARP\n 4-BOL ";
+	cin >> secim;
 	if (secim == 1)
 	{
 		sonuc = s1 + s2;
@@ -221,18 +222,18 @@ baslangic:
 	}
 	else
 	{
-		std::cout << "Yanlis secim yaptiniz programi tekrar aciniz\n";
+		cout << "Yanlis secim yaptiniz programi tekrar aciniz\n";
 		goto baslangic;
 	}
-	std::cout << "Sonuc :" << sonuc;
-	std::cout << "\nProgramimiza tekrar bekleriz";
-	*/
+	cout << "Sonuc :" << sonuc;
+	cout << "\nProgramimiza tekrar bekleriz";
+	
 	//--------------------------------------------------------------------------------------
 
 	int derece;
-	std::string goruntule;
-	std::cout << "Lutfen 0 ve 100 arasinda derece giriniz: ";
-	std::cin >> derece;
+	string goruntule;
+	cout << "Lutfen 0 ve 100 arasinda derece giriniz: ";
+	cin >> derece;
 
 	if (derece < 0 || derece > 100)
 	{
@@ -250,9 +251,41 @@ baslangic:
 	{
 		goruntule = "Iyi.";
 	}
-	std::cout << goruntule << nl;
+	cout << goruntule << nl;
 	return 0;
-
+	
 	//--------------------------------------------------------------------------------------
+
+	int sayi;
+	cout << "Bir sayi giriniz: ";
+	cin >> sayi;
+	if (sayi % 2 == 1)
+	{
+		cout << "tek";
+	}
+	else
+	{
+		cout << "cift";
+	}
+	*/
+	//--------------------------------------------------------------------------------------
+
+	double birincisayi, buyuksayi, ikincisayi, ucuncusayi;
+	cout << "Birinci sayiyi giriniz:\n";
+	cin >> birincisayi;
+	buyuksayi = birincisayi;
+	cout << "Ikinci sayiyi giriniz:\n";
+	cin >> ikincisayi;
+	if (ikincisayi > buyuksayi)
+	{
+		buyuksayi = ikincisayi;
+	}
+	cout << "Ucununcu sayiyi giriniz:\n";
+	cin >> ucuncusayi;
+	if (ucuncusayi > buyuksayi)
+	{
+		buyuksayi = ucuncusayi;
+	}
+	cout << "Girilen en buyuk sayi = " << buyuksayi;
 }
 
