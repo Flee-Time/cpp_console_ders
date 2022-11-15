@@ -388,7 +388,7 @@ baslangic:
 	case 4: cout << "4 girdiniz"; break;
 	default: cout << "1 ile 4 ten farkli"; break;
 	}
-	*/
+	
 	//--------------------------------------------------------------------------------------
 
 	int toplam = 0, sayac = 1, dersnot, ortalama;
@@ -401,6 +401,20 @@ baslangic:
 	}
 	ortalama = toplam / 6;
 	cout << "Sinif ortalamasi = " << ortalama << endl;
+	return 0;
+	*/
+	//---------------------------------------------------------------------------------------
+	
+	int sayi;
+	long int faktoriyel = 1;
+	cout << "Bir sayi giriniz: ";
+	cin >> sayi;
+	cout << sayi << " 'in Faktoriyeli: ";
+	while (sayi > 1)
+	{
+		faktoriyel *= sayi--;
+	}
+	cout << faktoriyel << endl;
 	return 0;
 }
 
