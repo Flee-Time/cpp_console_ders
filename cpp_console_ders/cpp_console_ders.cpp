@@ -287,7 +287,7 @@ baslangic:
 		buyuksayi = ucuncusayi;
 	}
 	cout << "Girilen en buyuk sayi = " << buyuksayi;
-	*/
+	
 	//---------------------------------------------------------------------------------------
 
 	baslangic:
@@ -323,6 +323,37 @@ baslangic:
 			cout << "Lutfen 0 ile 100 arasi deger giriniz.\n";
 			goto baslangic;
 		}
-		cout << "/*/*/*/*| Tekrar Bekleriz |/*/*/*/*/*/*";
+		cout << "| Tekrar Bekleriz |";
+	*/
+	//-----------------------------------------------------------------------------------
+
+	int sayi1;
+	int sayi2;
+	char islem;
+	cout << "Birinci sayiyi giriniz: ";
+	cin >> sayi1;
+	cout << "Ikinci sayiyi giriniz: ";
+	cin >> sayi2;
+	cout << "Isleminizi giriniz(+,-,*,/): ";
+	cin >> islem;
+	switch (islem)
+	{
+	case '+':
+		cout << "Sonuc: " << sayi1 + sayi2;
+		break;
+	case '-':
+		cout << "Sonuc: " << sayi1 - sayi2;
+		break;
+	case '*':
+		cout << "Sonuc: " << sayi1 * sayi2;
+		break;
+	case '/':
+		cout << "Sonuc: " << sayi1 / sayi2;
+		break;
+	default:
+		cout << "Lutfen bir islem giriniz.";
+		break;
+	}
+	
 }
 
