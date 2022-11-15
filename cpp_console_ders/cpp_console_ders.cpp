@@ -416,7 +416,7 @@ baslangic:
 	}
 	cout << faktoriyel << endl;
 	return 0;
-	*/
+	
 	//-----------------------------------------------------------------------------------------
 
 	unsigned long n;
@@ -426,6 +426,19 @@ baslangic:
 		cin >> n;
 		cout << "Girdiginiz sayi: " << n << endl;
 	} while (n != 0);
+	return 0;
+	*/
+	//-----------------------------------------------------------------------------------------
+
+	int fac, sayi;
+	cout << "Sayi giriniz: ";
+	cin >> sayi;
+	fac = 1;
+	for (int j = 1; j <= sayi; j++)
+	{
+		fac *= j;
+	}
+	cout << "Sonuc: \a" << fac;
 	return 0;
 }
 
