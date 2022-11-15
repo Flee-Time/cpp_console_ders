@@ -427,7 +427,7 @@ baslangic:
 		cout << "Girdiginiz sayi: " << n << endl;
 	} while (n != 0);
 	return 0;
-	*/
+	
 	//-----------------------------------------------------------------------------------------
 
 	int fac, sayi;
@@ -439,6 +439,31 @@ baslangic:
 		fac *= j;
 	}
 	cout << "Sonuc: \a" << fac;
+	return 0;
+	*/
+	//------------------------------------------------------------------------------------------
+	
+	int t;
+	cout << "veri miktarini gir : ";
+	cin >> t;
+	double s = 0.0;
+	for (int i = 1; i <= t; i++)
+	{
+		cout << " " << i << ". ci veriyi giriniz: ";
+		double x;
+		cin >> x;
+		s += x;
+	}
+	double ort;
+	if (t > 0)
+	{
+		ort = s / t;
+	}
+	else
+	{
+		ort = 0.0;
+	}
+	cout << "Ortalama.....: " << ort << endl;;
 	return 0;
 }
 
