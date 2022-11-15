@@ -374,7 +374,27 @@ baslangic:
 		sayi++;
 		cout << sayi << endl;
 	}
-	*/
+	
 	//-------------------------------------------------------------------------------------
+	
+	int i;
+	cout << "1 ile 4 arasi bir sayi giriniz: ";
+	cin >> i;
+	switch (i)
+	{
+	case 1: cout << "1 girdiniz"; break;
+	case 2: cout << "2 girdiniz"; break;
+	case 3: cout << "3 girdiniz"; break;
+	case 4: cout << "4 girdiniz"; break;
+	default: cout << "1 ile 4 ten farkli"; break;
+	}
+	*/
+	//--------------------------------------------------------------------------------------
+
+	int toplam = 0, sayac = 1, dersnot, ortalama;
+	while (sayac <= 6)
+	{
+		cout << "Notu giriniz: ";
+	}
 }
 
