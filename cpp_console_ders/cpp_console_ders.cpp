@@ -402,7 +402,7 @@ baslangic:
 	ortalama = toplam / 6;
 	cout << "Sinif ortalamasi = " << ortalama << endl;
 	return 0;
-	*/
+	
 	//---------------------------------------------------------------------------------------
 	
 	int sayi;
@@ -415,6 +415,17 @@ baslangic:
 		faktoriyel *= sayi--;
 	}
 	cout << faktoriyel << endl;
+	return 0;
+	*/
+	//-----------------------------------------------------------------------------------------
+
+	unsigned long n;
+	do
+	{
+		cout << "Bir sayi giriniz (0'dan 100'e kadar): ";
+		cin >> n;
+		cout << "Girdiginiz sayi: " << n << endl;
+	} while (n != 0);
 	return 0;
 }
 
