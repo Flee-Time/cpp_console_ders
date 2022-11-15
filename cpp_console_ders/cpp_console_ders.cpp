@@ -395,6 +395,12 @@ baslangic:
 	while (sayac <= 6)
 	{
 		cout << "Notu giriniz: ";
+		cin >> dersnot;
+		toplam += dersnot;
+		sayac += 1;
 	}
+	ortalama = toplam / 6;
+	cout << "Sinif ortalamasi = " << ortalama << endl;
+	return 0;
 }
 
