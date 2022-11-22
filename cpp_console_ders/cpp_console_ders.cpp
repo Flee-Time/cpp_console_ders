@@ -465,15 +465,87 @@ baslangic:
 	}
 	cout << "Ortalama.....: " << ort << endl;;
 	return 0;
-	*/
+
 	//-------------------------------------------------------------------------------------------
 
 	int a[5] = { 2,7,0,3,9 };
-	
+
+	cout << "a(0)= " << a[0] << endl;
+	cout << "a(1)= " << a[1] << endl;
+	cout << "a(2)= " << a[2] << endl;
+	cout << "a(3)= " << a[3] << endl;
+	cout << "a(4)= " << a[4] << endl;
+	return 0;
+
+	//-------------------------------------------------------------------------------------------
+
+	int a[5] = { 2,7,0,3,9 };
+
 	for (int i = 0; i <= 4; i++)
 	{
 		cout << "a(" << i << ")= " << a[i] << nl;
 	}
 	return 0;
+
+	//-------------------------------------------------------------------------------------------
+
+	int enb, a[5];
+	for (int i = 0; i < 5; i++)
+	{
+		cin >> a[i];
+		enb = a[0];
+	}
+	for (int i = 1; i < 5; i++)
+	{
+		if (enb < a[i])
+		{
+			enb = a[i];
+		}
+	}
+	cout << endl;
+	cout << "En Buyuk Sayi= " << enb << endl;
+	return 0;
+
+	//------------------------------------------------------------------------------------------
+
+	int enb, sira, dizi[5];
+
+	for (int i = 1; i < 5; i++)
+	{
+		cout << i << ". Sayiyi Giriniz: ";
+		cin >> dizi[i];
+	}
+
+	enb = dizi[0];
+
+	for (int i = 1; i < 5; i++)
+	{
+		if (dizi[i] > enb)
+		{
+			enb = dizi[i];
+			sira = i;
+		}
+	}
+
+	cout << endl;
+	cout << "En Buyuk Sayi= " << enb << endl;
+	cout << "Dizideki Sayisi= " << sira << endl;
+	return 0;
+	*/
+	//------------------------------------------------------------------------------------------
+
+	int ay, gun, gunTop, ayGunSay[12] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+	cout << "\n 1 ile 12 arasinda ayi gir: ";
+	cin >> ay;
+	cout << "\n 1 ile 31 arasinda gunu gir: ";
+	cin >> gun;
+	gunTop = gun;
+	for (int i = 0; i < ay - 1; i++)
+	{
+		gunTop += ayGunSay[i];
+	}
+	cout << "Gun sayisi: " << gunTop;
+	return 0;
+
 }
 
