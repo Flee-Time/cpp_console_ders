@@ -86,7 +86,7 @@ int main()
 	cout << circle;
 	cout << nl;
 	return 0;
-	
+
 	//-------------------------------------------------------------------------------------
 
 	int a, b;
@@ -107,7 +107,7 @@ int main()
 	a += 2;
 	cout << a;
 	return 0;
-	
+
 	//--------------------------------------------------------------------------------------
 
 	int a, b, c;
@@ -116,25 +116,25 @@ int main()
 	c = (a > b) ? a : b;
 	cout << c;
 	return 0;
-	
+
 	//--------------------------------------------------------------------------------------
-	
+
 	double yaricap, alan;
 	cout << "Lutfen dairenin yaricapini giriniz: ";
 	cin >> yaricap;
 	alan = (yaricap * yaricap) * PI;
 	cout << yaricap << " li dairenin alani = " << alan << nl;
 	return 0;
-	
+
 	//--------------------------------------------------------------------------------------
-	
+
 	int x = 5;
 	int y = 10;
 	cout << "x = " << x << nl;
 	cout << "y = " << y << nl;
 	cout << "++x  * --y = " << (++x * --y) << nl;
 	return 0;
-	
+
 	//--------------------------------------------------------------------------------------
 
 	int sayi1, sayi2, sayi3;
@@ -144,21 +144,21 @@ int main()
 	toplam = sayi1 + sayi2 + sayi3;
 	cout << "Toplam: " << toplam << nl;
 	return 0;
-	
+
 	//--------------------------------------------------------------------------------------
-	
+
 	int sayi;
 	cout << "Bir sayi giriniz: ";
 	cin >> sayi;
 	cout << (sayi % 2 == 1 ? "Tek" : "Cift");
 	return 0;
-	
+
 	//--------------------------------------------------------------------------------------
-	
+
 	int dersnot;
 	cout << "Not'u giriniz: ";
 	cin >> dersnot;
-	if (dersnot >= 50) 
+	if (dersnot >= 50)
 	{
 		cout << "Gectiniz!";
 	}
@@ -175,7 +175,7 @@ int main()
 			cout << "Kaldiniz!";
 		}
 	}
-	
+
 	//---------------------------------------------------------------------------------------
 
 	int dersnot;
@@ -193,7 +193,7 @@ int main()
 	{
 		cout << "Zar zor gectiniz!";
 	}
-	
+
 	//---------------------------------------------------------------------------------------
 
 baslangic:
@@ -227,7 +227,7 @@ baslangic:
 	}
 	cout << "Sonuc :" << sonuc;
 	cout << "\nProgramimiza tekrar bekleriz";
-	
+
 	//--------------------------------------------------------------------------------------
 
 	int derece;
@@ -253,7 +253,7 @@ baslangic:
 	}
 	cout << goruntule << nl;
 	return 0;
-	
+
 	//--------------------------------------------------------------------------------------
 
 	int sayi;
@@ -267,7 +267,7 @@ baslangic:
 	{
 		cout << "cift";
 	}
-	
+
 	//--------------------------------------------------------------------------------------
 
 	double birincisayi, buyuksayi, ikincisayi, ucuncusayi;
@@ -287,7 +287,7 @@ baslangic:
 		buyuksayi = ucuncusayi;
 	}
 	cout << "Girilen en buyuk sayi = " << buyuksayi;
-	
+
 	//---------------------------------------------------------------------------------------
 
 	baslangic:
@@ -324,7 +324,7 @@ baslangic:
 			goto baslangic;
 		}
 		cout << "| Tekrar Bekleriz |";
-	
+
 	//-----------------------------------------------------------------------------------
 
 	int sayi1;
@@ -354,7 +354,7 @@ baslangic:
 		cout << "Lutfen bir islem giriniz.";
 		break;
 	}
-	
+
 	//--------------------------------------------------------------------------------------
 
 	int sayi;
@@ -364,7 +364,7 @@ baslangic:
 	{
 		cout << "SAYI: " << i << endl;
 	}
-	
+
 	//--------------------------------------------------------------------------------------
 
 	int sayi;
@@ -374,9 +374,9 @@ baslangic:
 		sayi++;
 		cout << sayi << endl;
 	}
-	
+
 	//-------------------------------------------------------------------------------------
-	
+
 	int i;
 	cout << "1 ile 4 arasi bir sayi giriniz: ";
 	cin >> i;
@@ -388,7 +388,7 @@ baslangic:
 	case 4: cout << "4 girdiniz"; break;
 	default: cout << "1 ile 4 ten farkli"; break;
 	}
-	
+
 	//--------------------------------------------------------------------------------------
 
 	int toplam = 0, sayac = 1, dersnot, ortalama;
@@ -402,9 +402,9 @@ baslangic:
 	ortalama = toplam / 6;
 	cout << "Sinif ortalamasi = " << ortalama << endl;
 	return 0;
-	
+
 	//---------------------------------------------------------------------------------------
-	
+
 	int sayi;
 	long int faktoriyel = 1;
 	cout << "Bir sayi giriniz: ";
@@ -416,7 +416,7 @@ baslangic:
 	}
 	cout << faktoriyel << endl;
 	return 0;
-	
+
 	//-----------------------------------------------------------------------------------------
 
 	unsigned long n;
@@ -427,7 +427,7 @@ baslangic:
 		cout << "Girdiginiz sayi: " << n << endl;
 	} while (n != 0);
 	return 0;
-	
+
 	//-----------------------------------------------------------------------------------------
 
 	int fac, sayi;
@@ -440,9 +440,9 @@ baslangic:
 	}
 	cout << "Sonuc: \a" << fac;
 	return 0;
-	*/
+
 	//------------------------------------------------------------------------------------------
-	
+
 	int t;
 	cout << "veri miktarini gir : ";
 	cin >> t;
@@ -464,6 +464,16 @@ baslangic:
 		ort = 0.0;
 	}
 	cout << "Ortalama.....: " << ort << endl;;
+	return 0;
+	*/
+	//-------------------------------------------------------------------------------------------
+
+	int a[5] = { 2,7,0,3,9 };
+	
+	for (int i = 0; i <= 4; i++)
+	{
+		cout << "a(" << i << ")= " << a[i] << nl;
+	}
 	return 0;
 }
 
