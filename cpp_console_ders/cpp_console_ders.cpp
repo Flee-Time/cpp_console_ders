@@ -8,6 +8,14 @@ Koray Bilir - 222203533 - Teknik Bilimler MYO - Bilgisayar Programciligi
 #define nl '\n'
 using namespace std;
 
+/*
+struct bilgi
+{
+	int boyu, yasi;
+	float agirligi;
+};
+*/
+
 int main()
 {
 	/*
@@ -531,7 +539,7 @@ baslangic:
 	cout << "En Buyuk Sayi= " << enb << endl;
 	cout << "Dizideki Sayisi= " << sira << endl;
 	return 0;
-	*/
+
 	//------------------------------------------------------------------------------------------
 
 	int ay, gun, gunTop, ayGunSay[12] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
@@ -546,6 +554,87 @@ baslangic:
 	}
 	cout << "Gun sayisi: " << gunTop;
 	return 0;
+	
+	//------------------------------------------------------------------------------------------
 
+	const int I = 3;
+	bilgi bil[I];
+
+	for (int  i = 0; i < I; i++)
+	{
+		cout << "\n Boyu gir: ";
+		cin >> bil[i].boyu;
+		cout << "\n Yasi gir: ";
+		cin >> bil[i].yasi;
+		cout << "\n Agirligi gir: ";
+		cin >> bil[i].agirligi;
+	}
+	for (int i = 0; i < I; i++)
+	{
+		cout << "\n Boyu: " << bil[i].boyu;
+		cout << "\n Yasi: " << bil[i].yasi;
+		cout << "\n Agirligi: " << bil[i].agirligi;
+	}
+	return 0;
+	
+	//------------------------------------------------------------------------------------------
+	
+	char adi[22], s_adi[22];
+	float saat, top_satis, prim, ucret;
+
+	cout << "Ucret Hesabi\n\n";
+	cout << "Satis elemaninin adini giriniz: ";
+	cin >> adi;
+	cout << "Satis elemaninin soyadini giriniz: ";
+	cin >> s_adi;
+	cout << "Calistigi toplam saati giriniz: ";
+	cin >> saat;
+	ucret = 50 * (float)saat;
+	cout << "Sattigi urunler toplamini giriniz: ";
+	cin >> top_satis;
+	if (top_satis > 5000)
+	{
+		prim = 1000;
+	}
+	else
+	{
+		prim = 0;
+	}
+	cout << "\n  Odenecek Ucret \n";
+	cout << "\nSatis Elemani: " << adi << "  " << s_adi << endl;
+	cout << "\n  Maas Bodrosu: \n";
+	cout << "---------------------------- \n";
+	cout << "Ucret=  " << ucret << " ve Alacagi Prim= " << prim << endl;
+	cout << "Toplam= " << ucret + prim << " TL odenecektir." << endl;
+	return 0;
+	
+	//------------------------------------------------------------------------------------------
+
+	int sayac = 0, toplam = 0, sayilar[5]={11, 5, 23, 4, 54}, elemanSayisi = sizeof(sayilar)/sizeof(sayilar[0]);
+
+	while (sayac < elemanSayisi)
+	{
+		toplam += sayilar[sayac];
+		sayac++;
+	}
+	cout << toplam << endl;
+	return 0;
+
+	*/
+	//------------------------------------------------------------------------------------------
+
+	int sayac = 0, enBuyuk = 0, sayilar[10] = { 5, 55, 49, 87, 63, 18, 72, 26, 45, 74 };
+
+	while (sayac < 10)
+	{
+		if (sayilar[sayac] > enBuyuk)
+		{
+			enBuyuk = sayilar[sayac];
+		}
+		sayac++;
+	}
+
+	cout << "En buyuk sayi: " << enBuyuk;
+	return 0;
 }
 
