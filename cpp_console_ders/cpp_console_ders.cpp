@@ -788,7 +788,7 @@ baslangic:
 	int vize, final;
 	cout << "Vize: ";
 	cin >> vize;
-	cout << "Vize: ";
+	cout << "Final: ";
 	cin >> final;
 	cout << "Ortalama: " << ortalama(vize, final) << endl;
 }
