@@ -14,7 +14,85 @@ struct bilgi
 	int boyu, yasi;
 	float agirligi;
 };
+
+void printmessage()
+{
+	cout << "Benim fonksiyonum!";
+}
+
+double dairealani(double yaricap)
+{
+	double alan;
+	alan = 3.145 * (yaricap * yaricap);
+	return alan;
+}
+
+long faktoriyel(long x)
+{
+	if (x > 1)
+	{
+		return (x * faktoriyel(x - 1));
+	}
+	else
+	{
+		return 1;
+	}
+}
+
+int toplam(int a, int b)
+{
+	int r;
+	r = a + b;
+	return(r);
+}
+
+long factorial(long a)
+{
+	if (a > 1)
+	{
+		return (a * factorial(a - 1));
+	}
+	else
+	{
+		return 1;
+	}
+}
+
+void diziyazdir(int arg[], int length)
+{
+	for (int i = 0; i < length; i++)
+	{
+		cout << arg[i] << " ";
+	}
+
+	cout << endl;
+}
+
+int carpma(int a, int b)
+{
+	return (a * b);
+}
+
+float bolme(float a, float b)
+{
+	return (a / b);
+}
+
+double alan(int yaricap)
+{
+	return (PI * (yaricap * yaricap));
+}
+
+double cevre(int yaricap)
+{
+	return ((2 * PI) * yaricap);
+}
 */
+
+double ortalama(int v, int f)
+{
+	return (v * 0.4) + (f * 0.6);
+}
 
 int main()
 {
@@ -619,8 +697,7 @@ baslangic:
 	}
 	cout << toplam << endl;
 	return 0;
-
-	*/
+	
 	//------------------------------------------------------------------------------------------
 
 	int sayac = 0, enBuyuk = 0, sayilar[10] = { 5, 55, 49, 87, 63, 18, 72, 26, 45, 74 };
@@ -636,5 +713,82 @@ baslangic:
 
 	cout << "En buyuk sayi: " << enBuyuk;
 	return 0;
-}
+	
+	//------------------------------------------------------------------------------------------
+	
+	printmessage();
+	return 0;
+	
+	//------------------------------------------------------------------------------------------
 
+	long double r, alan = 0;
+	r = 3;
+	alan = dairealani(r);
+	cout << r << " olan " << "dairenin alani " << alan << endl;
+	cout << dairealani(12) << endl;
+
+	if (dairealani(r / 2) >= 100)
+	{
+		cout << "buyuk daire" << endl;
+	}
+
+	return 0;
+	
+	//------------------------------------------------------------------------------------------
+
+	long sayi;
+	
+	cout << "Tamsayi giriniz: ";
+	cin >> sayi;
+	cout << sayi << "!=" << faktoriyel(sayi) << endl;
+	return 0;
+	
+	//------------------------------------------------------------------------------------------
+	
+	int z;
+	z = toplam(5, 3);
+	cout << "Sonuc: " << z;
+	return 0;
+	
+	//------------------------------------------------------------------------------------------
+
+	long number;
+	cout << "Sayi tipini giriniz: ";
+	cin >> number;
+	cout << number << "!=" << factorial(sayi) << endl;
+	return 0;
+	
+	//------------------------------------------------------------------------------------------
+	
+	int birincidizi[] = { 5, 10, 15 }, ikincildizi[] = { 2,4,6,8,10 };
+	diziyazdir(birincidizi, 3);
+	diziyazdir(ikincildizi, 5);
+	return 0;
+	
+	//------------------------------------------------------------------------------------------
+
+	int x = 5, y = 2;
+	float n = 5.0f, m = 2.0f;
+	cout << carpma(x, y);
+	cout << endl;
+	cout << bolme(n, m);
+	cout << endl;
+	return 0;
+	
+	//------------------------------------------------------------------------------------------
+
+	int r;
+	cout << "Yaricap: ";
+	cin >> r;
+	cout << "Alan: " << alan(r) << endl;
+	cout << "Cevre: " << cevre(r);
+	*/
+	//------------------------------------------------------------------------------------------
+	
+	int vize, final;
+	cout << "Vize: ";
+	cin >> vize;
+	cout << "Vize: ";
+	cin >> final;
+	cout << "Ortalama: " << ortalama(vize, final) << endl;
+}
