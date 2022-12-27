@@ -87,12 +87,12 @@ double cevre(int yaricap)
 {
 	return ((2 * PI) * yaricap);
 }
-*/
 
 double ortalama(int v, int f)
 {
 	return (v * 0.4) + (f * 0.6);
 }
+*/
 
 int main()
 {
@@ -782,7 +782,7 @@ baslangic:
 	cin >> r;
 	cout << "Alan: " << alan(r) << endl;
 	cout << "Cevre: " << cevre(r);
-	*/
+	
 	//------------------------------------------------------------------------------------------
 	
 	int vize, final;
@@ -791,4 +791,119 @@ baslangic:
 	cout << "Final: ";
 	cin >> final;
 	cout << "Ortalama: " << ortalama(vize, final) << endl;
+	
+	//------------------------------------------------------------------------------------------
+
+	int satis[5][3] = { {700,600,650},{900,800,700},{300,400,350},{500,450,470},{600,500,480} };
+	int t;
+	cout << "OTOMOBIL SATISLARI TABLOSU :" << endl;
+	
+	for (int i = 0; i <= 4; i++)
+	{
+		for (int j = 0; j <= 2; j++)
+		{
+			cout << satis[i][j] << endl;
+		}
+		cout << endl;
+	}
+	cout << endl;
+	for (int i = 0; i <= 4; i++)
+	{
+		t = 0;
+		for (int j = 0; j <= 2; j++)
+		{
+			t += satis[i][j];
+		}
+		cout << "nci marka icin 3 aylik toplam satis= " << t << endl;
+	}
+	cout << endl;
+	return 0;
+	
+	//------------------------------------------------------------------------------------------
+
+	int satis[5][3] = { {700,600,650},{900,800,700},{300,400,350},{500,450,470},{600,500,480} };
+	cout << "SATIS adli tablo: " << endl;
+
+	for (int i = 0; i <= 4; i++)
+	{
+		for (int j = 0; j <= 2; j++)
+		{
+			cout << satis[i][j] << endl;
+		}
+		cout << endl;
+	}
+	return 0;
+	
+	//------------------------------------------------------------------------------------------
+
+	double x;
+
+	cout << "x: ";
+	cin >> x;
+	cout << "x=" << x << " Karekoku=" << sqrt(x);
+	return 0;
+	
+	//------------------------------------------------------------------------------------------
+
+	double x, y;
+
+	cout << "x: ";
+	cin >> x;
+	cout << "y: ";
+	cin >> y;
+
+	for (; x <= y; x++)
+	{
+		cout << "x=" << x << "\t Karekoku=" << sqrt(x);
+	}
+	
+	//------------------------------------------------------------------------------------------
+	double x, y;
+
+	cout << "x: ";
+	cin >> x;
+	cout << "y: ";
+	cin >> y;
+
+	for (; x <= y; x++)
+	{
+		cout << "x=" << x << "\t" << y << ". kuvveti=" << pow(x, y); << sqrt(x);
+	}
+	*/
+	//------------------------------------------------------------------------------------------
+
+	int a[2][3], b[2][3], c[2][3];
+
+	for (int i = 0; i < 2; i++)
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			cout << "a matrisi " << i << "-" << j << ":";
+			cin >> a[i][j];
+		}
+	}
+	cout << endl;
+	for (int i = 0; i < 2; i++)
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			cout << "b matrisi " << i << "-" << j << ":";
+			cin >> b[i][j];
+		}
+	}
+	for (int i = 0; i < 2; i++)
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			c[i][j] = a[i][j] + b[i][j];
+		}
+	}
+	cout << endl;
+	for (int i = 0; i < 2; i++)
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			cout << c[i][j] << " ";
+		}
+	}
 }
