@@ -120,7 +120,6 @@ bool asal(int sayi)
 		return false;
 	}
 }
-*/
 
 bool ciftmi(int sayi)
 {
@@ -134,6 +133,21 @@ bool ciftmi(int sayi)
 	}
 }
 
+struct KISI
+{
+	char isim[50];
+	int yas;
+	float maas;
+};
+
+void verigoruntule(KISI p)
+{
+	cout << "Bilgileri Goruntule." << endl;
+	cout << "Isim: " << p.isim << endl;
+	cout << "Yas: " << p.yas << endl;
+	cout << "Maas: " << p.maas << endl;
+}
+*/
 
 int main()
 {
@@ -1102,7 +1116,7 @@ baslangic:
 	{
 		cout << "Sayi Tek.";
 	}
-	*/
+	
 	//------------------------------------------------------------------------------------------
 
 	int sayi, tekAdet = 0, ciftAdet = 0;
@@ -1122,4 +1136,61 @@ baslangic:
 	}
 	cout << "Girilen Tek Sayilarin Adeti : " << tekAdet << endl;
 	cout << "Girilen Cift Sayilarin Adeti : " << ciftAdet << endl;
+	
+	//------------------------------------------------------------------------------------------
+	
+	int sayi;
+	cout << "Sayi : ";
+	cin >> sayi;
+	cout << pow(sayi, 3) << endl;
+	cout << sqrt(sayi) << endl;
+	cout << pow(27, 1.0 / 3.0) << endl;
+	return 0;
+	
+	//------------------------------------------------------------------------------------------
+
+	KISI p;
+	cout << "Isiminiz: ";
+	cin.get(p.isim, 50);
+	cout << "Yasiniz: ";
+	cin >> p.yas;
+	cout << "Maasinizi giriniz: ";
+	cin >> p.maas;
+
+	verigoruntule(p);
+	return 0;
+	
+	//------------------------------------------------------------------------------------------
+
+	KISI p;
+	cout << "Isiminiz: ";
+	cin.get(p.isim, 50);
+	cout << "Yasiniz: ";
+	cin >> p.yas;
+	cout << "Maasinizi giriniz: ";
+	cin >> p.maas;
+	cout << "Bilgileri Goruntule." << endl;
+	cout << "Isim: " << p.isim << endl;
+	cout << "Yas: " << p.yas << endl;
+	cout << "Maas: " << p.maas << endl;
+	return 0;
+	
+	//------------------------------------------------------------------------------------------
+
+	char ad[30], soyad[30], tumad[60];
+	cout << "Adiniz: ";
+	cin.getline(ad, 30);
+	if (strcmp(ad, "Orhan") == 0)
+	{
+		cout << "Adiniz unlu sair Orhan Veli ile ayni." << endl;
+	}
+	else
+	{
+		cout << "Adiniz unlu sair Orhan Veli ile ayni degil." << endl;
+	}
+	cout << "Soyadiniz: ";
+	cin.getline(soyad, 30);
+	cout << "Ad ve Soyad: " << tumad << endl;
+	*/
+	//------------------------------------------------------------------------------------------
 }
