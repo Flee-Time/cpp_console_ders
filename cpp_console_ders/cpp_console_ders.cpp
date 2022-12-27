@@ -1007,4 +1007,13 @@ baslangic:
 	bool isTrue = false;
 	*/
 	//------------------------------------------------------------------------------------------
+
+	char harf;
+	harf = 'A';
+	int sayi = 100;
+	float decimal = 7.5;
+	double pi = 3.14159;
+	bool isTrue = false;
+	cout << sayi << endl;
+	return 0;
 }
