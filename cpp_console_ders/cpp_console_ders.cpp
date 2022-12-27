@@ -1,4 +1,4 @@
-/*
+﻿/*
 Koray Bilir - 222203533 - Teknik Bilimler MYO - Bilgisayar Programciligi
 */
 #include <iostream>
@@ -869,7 +869,7 @@ baslangic:
 	{
 		cout << "x=" << x << "\t" << y << ". kuvveti=" << pow(x, y); << sqrt(x);
 	}
-	*/
+	
 	//------------------------------------------------------------------------------------------
 
 	int a[2][3], b[2][3], c[2][3];
@@ -906,4 +906,98 @@ baslangic:
 			cout << c[i][j] << " ";
 		}
 	}
+	
+	//------------------------------------------------------------------------------------------
+	
+	int a[3][3] = { 5,7,9,0,3,0,7,5,1 }, b[3][3] = { 3,3,1,2,1,3,1,0,0 }, c[3][3], top;
+	for (int i = 0; i < 3; i++)
+	{
+		for (int x = 0; x < 3; x++)
+		{
+			top = 0;
+			for (int y = 0; y < 3; y++)
+			{
+				top += a[i][y] * b[y][x];
+			}
+			c[i][x] = top;
+		}
+	}
+	for (int i = 0; i < 3; i++)
+	{
+		for (int x = 0; x < 3; x++)
+		{
+			cout << c[i][x] << " ";
+		}
+		cout << endl;
+	}
+
+	return 0;
+	
+	//------------------------------------------------------------------------------------------
+	
+	int secim;
+	double i, j;
+	cout << "bir işlem seçiniz:" << endl;
+	cout << "1- karekok alma" << endl;
+	cout << "2- us alma" << endl;
+	cout << "3- e tabanında logaritma" << endl;
+	cout << "4- 10 tabanında logaritma" << endl;
+	cin >> secim;
+	if (secim == 1)
+	{
+		cout << "taban sayisini giriniz:";
+		cin >> i;
+		cout << sqrt(i) << endl;
+	}
+	else if (secim == 2)
+	{
+		cout << "taban sayisini giriniz:";
+		cin >> i;
+		cout << "us sayisini giriniz:";
+		cin >> j;
+		cout << pow(i, j) << endl;
+	}
+	else if (secim == 3)
+	{
+		cout << "sayiyi giriniz";
+		cin >> i;
+		cout << log(i) << endl;
+	}
+	else if (secim == 4)
+	{
+		cout << "sayiyi giriniz";
+		cin >> i;
+		cout << log10(i) << endl;
+	}
+	else
+	{
+		cout << "hatali secim yaptiniz";
+	}
+	return 0;
+
+	//------------------------------------------------------------------------------------------
+
+	int a = 1, b = -10, c = 21;
+	float x1, x2, delta;
+	delta = b * b - (4 * a * c);
+	if (delta > 0.0)
+	{
+		x1 = (-b + sqrt(delta)) / 2 * a;
+		x2 = (-b - sqrt(delta)) / 2 * a;
+		cout << "x1= " << x1 << endl;
+		cout << "x2= " << x2 << endl;
+	}
+	else if (delta == 0.0)
+	{
+		x1 = -b / 2 * a;
+		cout << "x1= " << x1 << endl;
+	}
+	else
+	{
+		cout << "Gercek kok yoktur." << endl;
+	}
+	return 0;
+	*/
+	//------------------------------------------------------------------------------------------
+
 }
