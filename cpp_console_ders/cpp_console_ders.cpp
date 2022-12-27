@@ -134,6 +134,7 @@ bool ciftmi(int sayi)
 	}
 }
 
+
 int main()
 {
 	/*
@@ -1087,7 +1088,7 @@ baslangic:
 	{
 		cout << "Sayi Asal Degil.";
 	}
-	*/
+	
 	//------------------------------------------------------------------------------------------
 
 	int sayi;
@@ -1101,4 +1102,24 @@ baslangic:
 	{
 		cout << "Sayi Tek.";
 	}
+	*/
+	//------------------------------------------------------------------------------------------
+
+	int sayi, tekAdet = 0, ciftAdet = 0;
+	for (int i = 0; i <= 10; i++)
+	{
+		cout << i << ". Sayi : ";
+		cin >> sayi;
+
+		if (ciftmi(sayi))
+		{
+			ciftAdet++;
+		}
+		else
+		{
+			tekAdet++;
+		}
+	}
+	cout << "Girilen Tek Sayilarin Adeti : " << tekAdet << endl;
+	cout << "Girilen Cift Sayilarin Adeti : " << ciftAdet << endl;
 }
