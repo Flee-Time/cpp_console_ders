@@ -99,7 +99,6 @@ void bilisim(int x, int y)
 	x = 20;
 	y = 10;
 }
-*/
 
 bool asal(int sayi)
 {
@@ -113,6 +112,19 @@ bool asal(int sayi)
 		}
 	}
 	if (sayac == 0)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+*/
+
+bool ciftmi(int sayi)
+{
+	if (sayi % 2 == 0)
 	{
 		return true;
 	}
@@ -1061,7 +1073,7 @@ baslangic:
 	bilisim(x, x);
 	cout << x;
 	return 0;
-	*/
+	
 	//------------------------------------------------------------------------------------------
 
 	int sayi;
@@ -1074,5 +1086,19 @@ baslangic:
 	else
 	{
 		cout << "Sayi Asal Degil.";
+	}
+	*/
+	//------------------------------------------------------------------------------------------
+
+	int sayi;
+	cout << "Sayi : ";
+	cin >> sayi;
+	if (ciftmi(sayi))
+	{
+		cout << "Sayi Cift.";
+	}
+	else
+	{
+		cout << "Sayi Tek.";
 	}
 }
