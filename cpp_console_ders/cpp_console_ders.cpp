@@ -92,7 +92,35 @@ double ortalama(int v, int f)
 {
 	return (v * 0.4) + (f * 0.6);
 }
+
+
+void bilisim(int x, int y)
+{
+	x = 20;
+	y = 10;
+}
 */
+
+bool asal(int sayi)
+{
+	int sayac = 0;
+	for (int i = 2; i < sayi; i++)
+	{
+		if (sayi % i == 0)
+		{
+			sayac++;
+			break;
+		}
+	}
+	if (sayac == 0)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
 
 int main()
 {
@@ -1026,6 +1054,25 @@ baslangic:
 	d = (int)b;
 	cout << c << ' ' << d;
 	return 0;
+	
+	//------------------------------------------------------------------------------------------
+
+	int x = 10;
+	bilisim(x, x);
+	cout << x;
+	return 0;
 	*/
 	//------------------------------------------------------------------------------------------
+
+	int sayi;
+	cout << "Sayi : ";
+	cin >> sayi;
+	if (asal(sayi))
+	{
+		cout << "Sayi Asal.";
+	}
+	else
+	{
+		cout << "Sayi Asal Degil.";
+	}
 }
